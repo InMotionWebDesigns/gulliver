@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+.palette-primary {
+
+	.bg-color-1 {
+		background-color: $palette-primary_1;
+	}
+	.bg-color-2 {
+		background-color: $palette-primary_2;
+	}
+	.bg-color-3 {
+		background-color: $palette-primary_3;
+	}
+	.bg-neutral {
+		background-color: $palette-primary_neutral_color;
+	}
+	/* Typography */
+	.navbar-nav .menu-item a {
+		color: $palette-primary_1;
+	}
+	.navbar-nav .menu-item a:hover {
+		color: $palette-primary_3;
+	}
+	hr {
+		border-color: $palette-primary_1;
+	}
+	.recent-news {
+		background-color: $palette-primary_2;
+	}
+	.recent-news h3 {
+		color: $palette-primary_3;
+	}
+	.recent-news a {
+		color: $palette-primary_neutral_color;
+	}
+	.recent-news li:before {
+		color: $palette-primary_3;
+	}
+	.footer-menu .navbar-nav a {
+		color: $palette-primary_3;
+	}
+	.footer-menu .navbar-nav a:hover {
+		color: $palette-primary_neutral_color;
+	}
+	.header-social i,
+	.footer-social i {
+		color: $palette-primary_3;
+	}
+	.featured4 .listing-item {
+	}
+}

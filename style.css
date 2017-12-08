@@ -1,0 +1,572 @@
+/*
+ Theme Name:   Gulliver
+ Theme URI:    https://www.boldgrid.com
+ Description:  IMW Gulliver Child Theme
+ Author:       IMW
+ Author URI:   https://www.boldgrid.com
+ Template:     boldgrid-prime
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+*/
+
+/*------------------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------------------
+# Base Styles
+	## Positioning
+	## Typography
+	## Titles
+	## Buttons
+	## Et Cetera
+# Header
+# Navigation
+	## Main Menu
+	## Other Menus
+	## Social Menus
+# GridBLocks
+# Modules
+	## Global
+# Pages
+# Posts
+# Plugins
+	## WooCommerce
+# Footer
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.entry-content {
+	padding-top: 0;
+}
+.page-template-default .entry-content {
+	padding: 0;
+	margin: 0;
+}
+.content-area {
+	margin-top: -125px;
+}
+.background-secondary,
+.post-title-hidden .content-area,
+.page-template-page_home .content-area,
+.single .content-area,
+.archive .content-area {
+	margin-top: 0;
+}
+.single .entry-title,
+.archive .entry-title {
+	padding-top: 20px;
+}
+.single .site-content {
+	margin-top: 125px;
+	padding: 2em 0;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+.woocommerce h2 {
+	font-weight: bold;
+}
+.single .entry-title,
+.archive .entry-title {
+	text-shadow: none;
+}
+.p-button-primary,
+.p-button-secondary {
+	white-space: nowrap;
+}
+.slogan,
+.widget {
+	word-wrap: break-word;
+}
+.site-footer a,
+.entry-content a,
+.entry-footer a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus,
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus,
+.entry-content .button-primary,
+.entry-content .button-secondary,
+.button-primary:hover,
+.button-primary:focus,
+.button-secondary:hover,
+.button-secondary:active {
+	text-decoration: none;
+}
+.site-title,
+.site-description,
+.call-to-action,
+.entry-title,
+#secondary-menu,
+#tertiary-menu,
+#header-upper-right,
+.menu-social ul,
+.site-footer {
+	text-align: center;
+}
+#footer-widget-area {
+	text-align: left;
+}
+
+/* Extra small devices (phones, less than 768px) */
+.xs-center,
+.mod-img,
+.mod-img-circle,
+.p-button-primary,
+.p-button-secondary {
+	text-align: center;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.xs-center,
+	.mod-img,
+	.mod-img-circle,
+	.gridblock .p-button-primary,
+	.gridblock .p-button-secondary {
+		text-align: left;
+	}
+	#tertiary-menu {
+		text-align: right;
+	}
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.page-template-page_home .entry-title {
+	display: none;
+}
+.page-template-page_home .entry-content h2 {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.entry-title {
+	margin-top: 1em;
+}
+.background-secondary h2 {
+	margin-top: 50px;
+}
+
+/* Headings */
+.hentry {
+	margin: 0 auto;
+}
+.hentry:first-child ~ .hentry {
+	margin-top: 50px;
+}
+.heading h3 {
+	margin-top: 10px;
+}
+.heading {
+	margin-bottom: 15px;
+}
+
+/* 404 */
+.error404 .page-header {
+	margin: 170px 0 20px;
+}
+
+/*-----------------------------------------------
+## Buttons
+-----------------------------------------------*/
+.button-primary,
+.button-secondary {
+	border-radius: 2px;
+	padding: 10px 25px;
+}
+
+.button-primary,
+.background-secondary .button-primary:hover,
+.background-secondary .button-primary:focus {
+	background: none;
+}
+
+/* Positioning */
+.p-button-primary,
+.p-button-secondary {
+	margin-bottom: 50px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.call-to-action .p-button-secondary {
+	margin-bottom: 0;
+	margin-top: 25px;
+}
+.gridblock .p-button-secondary {
+	margin-top: -25px;
+}
+
+/* Block vs. Inline */
+.button-primary,
+.button-secondary {
+	display: block;
+	margin-top: 15px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.button-primary,
+	.button-secondary {
+		display: inline;
+	}
+	.gridblock .p-button-secondary {
+		margin-top: 0;
+	}
+}
+
+/*-----------------------------------------------
+## Et Cetera
+-----------------------------------------------*/
+hr {
+	border-top: 2px solid;
+	height: 2px;
+}
+.widget_calendar a {
+	text-decoration: underline;
+}
+input,
+select {
+	color: #333;
+}
+.header-social i,
+.footer-social i {
+	margin: 10px;
+	font-size: 16px;
+}
+.footer-social {
+	padding-top: 20px;
+}
+.recent-news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 40px;
+}
+.recent-news ul {
+	display: flex;
+	height: 100%;
+	padding: 0;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 16px;
+}
+.featured3 .listing-item {
+	padding: 0 15px;
+}
+/*------------------------------------------------------------------------
+# Header
+------------------------------------------------------------------------*/
+.site-description {
+	margin-bottom: 1em;
+}
+
+/* Call To Action */
+.call-to-action {
+	border-radius: 7px;
+	margin: 50px auto;
+	padding: 25px;
+}
+.slogan {
+	padding: 0 25px;
+}
+.header-social p {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.header-top .row {
+	display: flex;
+}
+.header-social,
+.header-search {
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+}
+.header-social {
+	justify-content: flex-end;
+}
+.header-search {
+	justify-content: flex-start;
+}
+.header-social > aside,
+.header-search > aside {
+	margin: 0;
+}
+.site-description {
+	display: none;
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.call-to-action {
+		margin: 150px auto 200px;
+		padding: 25px 75px 50px;
+		width: 55%;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+.navbar {
+	background: none;
+	border: none;
+}
+.navbar-default {
+	margin-bottom: 0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background: transparent;
+}
+#primary-navbar ul.navbar-nav {
+	width: 100%;
+}
+
+/* Nav Center */
+.navbar-collapse {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Hover */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+}
+.navbar-nav {
+	padding: 15px 0;
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navbar-default .navbar-nav > li > a {
+		padding: 3px 25px;
+	}
+	.navbar-default .navbar-nav > li:last-child > a {
+		border-right: none;
+	}
+	.navbar .navbar-nav {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+	#primary-navbar ul.navbar-nav {
+		width: auto;
+	}
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+#footer-center-menu li a,
+#secondary-menu li a,
+#tertiary-menu li a {
+	padding: 0 1.2em;
+}
+#header-upper-right {
+	width: auto;
+}
+#header-upper-right li a {
+	padding: 8px;
+}
+.footer-center-items {
+	padding: 0;
+}
+
+/*-----------------------------------------------
+## Social Menus
+-----------------------------------------------*/
+#header-upper-right li.menu-social:after,
+#secondary-menu li.menu-social:after,
+#footer-center-menu li.menu-social:after {
+	content: "";
+}
+#primary-navbar li.menu-social a {
+	border-right: none;
+	padding: 8px;
+}
+#footer-center-menu li.menu-social a {
+	padding: 8px;
+}
+
+/* Social Icons */
+.menu-social ul {
+	margin-top: 2em;
+}
+.menu-social li a {
+	display: inline-block;
+	padding: 8px;
+}
+
+/*------------------------------------------------------------------------
+# GridBlocks
+------------------------------------------------------------------------*/
+.gridblock ul {
+	list-style-type: none;
+	padding-left: 1px;
+}
+.gridblock ul li:before {
+	border-right: 8px solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	margin-right: 8px;
+	position: relative;
+	width: 0;
+}
+.gridblock hr {
+	border: 0;
+	height: 2px;
+}
+
+/*------------------------------------------------------------------------
+# Modules
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Global
+-----------------------------------------------*/
+.mod-space-lg {
+	background: none;
+	height: 150px;
+}
+blockquote,
+.mod-blockquote {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+blockquote p,
+.mod-blockquote p {
+	padding-left: 20px;
+}
+.mod-gallery-fullwidth {
+	width: 100%;
+}
+.blog-feed ul {
+	list-style: none;
+	padding: 0;
+}
+.blog-feed.featured2 .listing-item {
+	width: 49%;
+}
+.blog-feed.featured2 .listing-item img {
+	width: 100%;
+}
+.blog-feed .display-posts-listing {
+	display: flex;
+	justify-content: space-between;
+}
+.featured4 img {
+	float: left;
+}
+.recent-news ul {
+	list-style: none;
+}
+.recent-news ul li:before {
+	content: "\00BB \0020"
+}
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+/* Search Page */
+.search .jumbotron {
+	background: none;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+.nav-links {
+	margin: 25px 0;
+}
+
+/* Comments */
+.panel {
+	background: transparent;
+}
+.panel-default,
+.panel-default > .panel-heading {
+	border: none;
+}
+.panel-footer {
+	border-top: 1px solid transparent;
+}
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce .site-main {
+	padding-top: 20px;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+	border: none;
+}
+.woocommerce-account p.order-again .btn.button-primary {
+	padding: 12px 24px;
+}
+.alert .btn.button-primary,
+.woocommerce-Message .btn.button-primary {
+	color: #333;
+}
+
+/*-----------------------------------------------
+## The Events Calendar
+-----------------------------------------------*/
+.post-type-archive-tribe_events h4.entry-title {
+	text-shadow: none;
+}
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-footer {
+	padding-bottom: 15px;
+}
+#footer-widget-area {
+	margin-top: 20px;
+}
+
+/* Disabled Footer */
+.disabled-footer .site-footer {
+	height: auto;
+	padding: 15px 0;
+}
