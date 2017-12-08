@@ -39,8 +39,7 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
                       <div class="col-sm-12">
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
+                          <h3 class="post-title"><?php the_title(); ?></h3>
                         </figcaption>
                       </div><!-- col -->
                       <?php
@@ -49,7 +48,8 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
              }
           ?>
       </div>
-
+<hr>
+<h2>Tastes</h2>
       <div class="featured2 row">
       <?php
           $featuredBlogs = new WP_Query('category_name=featured2&posts_per_page=2');
@@ -61,8 +61,7 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
                         <div class="col-sm-6">
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
+                          <h3 class="post-title"><?php the_title(); ?></h3>
                         </figcaption>
                       </div><!-- col -->
                       <?php
@@ -71,28 +70,55 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
            }
         ?>
       </div>
-      <div class="featured3 row">
-        <?php
-          $featuredBlogs = new WP_Query('category_name=featured3&posts_per_page=3');
-            if ($featuredBlogs->have_posts()) {
-              while($featuredBlogs->have_posts()) {
-                 $featuredBlogs->the_post();
-                    if(has_post_thumbnail()){
-                      ?>
-                      <div class="col-sm-4">
-                        <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
-                        <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
-                        </figcaption>
-                      </div><!-- col -->
-                      <?php
-                     }
-                 }
-             }
-          ?>
-      </div><!-- row -->
-
+<hr>
+<h2>Places</h2>
+<div class="featured3 row">
+<?php
+		$featuredBlogs = new WP_Query('category_name=featured3&posts_per_page=3');
+		if ($featuredBlogs->have_posts()) {
+				while($featuredBlogs->have_posts()) {
+						 $featuredBlogs->the_post();
+							if(has_post_thumbnail()){
+								?>
+									<div class="col-sm-4">
+									<div class="featured-image>"><?php the_post_thumbnail(); ?></div>
+									<figcaption>
+										<h3 class="post-title"><?php the_title(); ?></h3>
+										<div class="post-content"><?php the_excerpt(); ?></div>
+									</figcaption>
+								</div><!-- col -->
+								<?php
+						 }
+				 }
+		 }
+	?>
+</div>
+<hr>
+<div class="row">
+	<?php
+			$featuredBlogs = new WP_Query('category_name=featured4&posts_per_page=1');
+			if ($featuredBlogs->have_posts()) {
+					while($featuredBlogs->have_posts()) {
+							 $featuredBlogs->the_post();
+								if(has_post_thumbnail()){
+									?>
+										<div class="col-sm-4">
+											<div class="featured-image>"><?php the_post_thumbnail(); ?></div>
+										</div><!-- col -->
+										<div class="col-sm-4">
+											<h3 class="post-title"><?php the_title(); ?></h3>
+											<?php the_category(); the_date(); ?>
+											<div class="post-content"><?php the_excerpt(); ?></div>
+										</div><!-- col -->
+									<?php
+							 }
+					 }
+			 }
+		?>
+		<div class="col-sm-4">
+			<?php do_action( 'boldgrid-theme-location', 'page', '1' ); ?>
+		</div>
+</div>
 		</div><!-- container -->
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">

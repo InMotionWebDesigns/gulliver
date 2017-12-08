@@ -43,6 +43,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	        '11' => array( '[action]boldgrid_display_attribution_links' ),
 	    );
 
+	$boldgrid_framework_configs['template']['locations']['page'] = array(
+	        '1' => array( '[widget]boldgrid-widget-3' ),
+	    );
+
 			// Default Colors.
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
 				array(
@@ -130,6 +134,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Name Widget Areas
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Search';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Social Media';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-3']['name'] = 'Recent News';
 
 	// Configs above will override framework defaults
 	return $boldgrid_framework_configs;

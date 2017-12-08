@@ -36,8 +36,12 @@ $configs = $boldgrid_theme_framework->get_configs();
                       <div class="col-sm-12">
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
+                          <h2 class="post-title">
+														<?php the_title(); ?>
+													</h2>
+                          <div class="post-content">
+														<?php the_excerpt(); ?>
+													</div>
                         </figcaption>
                       </div><!-- col -->
                       <?php
@@ -46,7 +50,7 @@ $configs = $boldgrid_theme_framework->get_configs();
              }
           ?>
       </div>
-
+<hr>
       <div class="featured2 row">
       <?php
           $featuredBlogs = new WP_Query('category_name=featured2&posts_per_page=2');
@@ -58,8 +62,12 @@ $configs = $boldgrid_theme_framework->get_configs();
                         <div class="col-sm-6">
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
+                          <h2 class="post-title">
+														<?php the_title(); ?>
+													</h2>
+                          <div class="post-content">
+														<?php the_excerpt(); ?>
+													</div>
                         </figcaption>
                       </div><!-- col -->
                       <?php
@@ -79,8 +87,12 @@ $configs = $boldgrid_theme_framework->get_configs();
                       <div class="col-sm-4">
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
-                          <h2 class="post-title"><?php the_title(); ?></h2>
-                          <p class="post-content"><?php the_excerpt(); ?></p>
+                          <h2 class="post-title">
+														<?php the_title(); ?>
+													</h2>
+                          <div class="post-content">
+														<?php the_excerpt(); ?>
+													</div>
                         </figcaption>
                       </div><!-- col -->
                       <?php
