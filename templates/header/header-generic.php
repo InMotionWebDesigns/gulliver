@@ -12,7 +12,7 @@ global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
-<header id="masthead" class="<?php echo basename( __FILE__, '.php' ); ?> palette-primary" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+<header id="masthead" class="<?php echo basename( __FILE__, '.php' ); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<?php do_action( 'boldgrid_header_top' ); ?>
 		<div class='boldgrid-section'>
 			<div class="container-fluid bg-color-1 header-top">

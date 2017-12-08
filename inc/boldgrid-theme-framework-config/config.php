@@ -14,6 +14,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['header'] = 'generic';
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
 	$boldgrid_framework_configs['template']['call-to-action'] = 'false';
+	$boldgrid_framework_configs['template']['sidebar'][] = '[page_blog.php]is_page_template';
 
 	// Remove Container ID that is targetted by navbar-toggle.
 	$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';

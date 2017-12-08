@@ -27,7 +27,7 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
 	</header><!-- .entry-header -->
 	<?php do_action( 'after_entry_title' ); ?>
 	<div class="entry-content">
-		<div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-content' )?>">
+		<div class="bgtfw container">
 			<div class="featured1 row">
         <?php
           $featuredBlogs = new WP_Query('category_name=featured1&posts_per_page=1');
@@ -91,11 +91,9 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
                  }
              }
           ?>
-      </div>
-		</div>
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
-		</div>
+      </div><!-- row -->
+
+		</div><!-- container -->
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
 		<?php get_template_part( 'templates/entry-footer' ); ?>
