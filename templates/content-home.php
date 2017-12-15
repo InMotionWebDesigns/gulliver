@@ -40,6 +40,7 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
                           <h3 class="post-title"><?php the_title(); ?></h3>
+													<a href="#">View More <i class="fa fa-angle-double-right"></i></a>
                         </figcaption>
                       </div><!-- col -->
                       <?php
@@ -62,6 +63,7 @@ if ( 'all-pages' === $cta || 'home-only' === $cta ) {
                         <div class="featured-image>"><?php the_post_thumbnail(); ?></div>
                         <figcaption>
                           <h3 class="post-title"><?php the_title(); ?></h3>
+													<a href="#">View More <i class="fa fa-angle-double-right"></i></a>
                         </figcaption>
                       </div><!-- col -->
                       <?php

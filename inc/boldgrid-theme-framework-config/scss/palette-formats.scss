@@ -37,6 +37,13 @@
 	.recent-news li:before {
 		color: $palette-primary_3;
 	}
+	.readmore {
+		background-color: $palette_primary_2;
+		color: $palette-primary_neutral_color;
+	}
+	.readmore:hover {
+		background-color: $palette_primary_3;
+	}
 	.footer-menu .navbar-nav a {
 		color: $palette-primary_3;
 	}
